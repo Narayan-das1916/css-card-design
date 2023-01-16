@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-size-adjust: inherit;
+}
+:root{
+	--white: white;
+	--black: black;
+	--light: #45818e;
+	--body: #f1f1f1;
+	--font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+body{
+	background: var(--body);
+}
+.slider{
+    width: 100%;
+    height: 65vh;
+    background-image: url(https://source.unsplash.com/1600x900/?nature),
+    linear-gradient(var(--light),var(--black));
+    background-blend-mode: screen;
+}
+.box-group{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box h1{
+	color: var(--black);
+	font-size: 3em;
+	font-family: var(--font);
+	text-transform: uppercase;
+	padding: 10px 0px;
+}
+.box p{
+	color: var(--black);
+	font-size: 1em;
+	font-family: var(--font);
+	padding: 10px 0px;
+}
+.button-group{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.button{
+	width: 90px;
+	height: 40px;
+	background: var(--light);
+	margin: 10px;
+	border-radius: 4px;
+	transition:  .3s;
+}
+.button button{
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	color: var(--white);
+	cursor: pointer;
+	border-radius: 4px;
+	transition:  .3s;
+}
+.button:hover,
+.button button:hover{
+	background: var(--black)!important;
+	transition:  .3s;
+}
